@@ -97,7 +97,7 @@ total_hit = initial_round
 
 #total_hit = hit?(inital_total)
 
-until total_hit == 21 || stay == true
+until total_hit >= 21 || stay == true
 
 stay_check = total_hit
 total_hit = hit?(total_hit)
