@@ -50,7 +50,7 @@ def initial_round
 card_total = deal_card + deal_card
 
 display_card_total(card_total)
-binding.pry
+#binding.pry
 return card_total
 
 end
@@ -94,17 +94,17 @@ asked_again = false
 
 inital_total = initial_round
 
-
-
 until total_hit == 21
+
+  if first_hit == inital_total && asked_again = false
+    second_hit = hit?(inital_total)
+    asked_again = true
+
+  end
 
 first_hit = hit?(inital_total)
 
-if first_hit == inital_total && asked_again = false
-  second_hit = hit?(inital_total)
-  asked_again = true
 
-end
 
 total_hit = first_hit += second_hit
 
