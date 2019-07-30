@@ -90,11 +90,34 @@ welcome
 first_hit = 0
 second_hit = 0
 total_hit = 0
+hit_count = 0
 asked_again = false
 
 inital_total = initial_round
 
 until total_hit == 21
+
+if first_hit = 0 
+  first_hit = hit?(inital_total)
+  second_hit = hit?(first_hit)
+end
+
+continued_hit = hit?(second_hit)
+
+hit_one = hit?(hit_two)
+hit_count += 1
+
+
+hit_two = hit(hit_one)
+hit_count += 1
+
+total_hit = hit_two
+
+if hit_one == hit_two
+  sticked = true
+
+
+
 
   if first_hit == inital_total && asked_again = false
     second_hit = hit?(inital_total)
@@ -102,7 +125,9 @@ until total_hit == 21
 
   end
 
+if first_hit == 0
 first_hit = hit?(inital_total)
+end
 
 
 
