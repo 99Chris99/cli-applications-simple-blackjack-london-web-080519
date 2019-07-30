@@ -97,7 +97,7 @@ inital_total = initial_round
 
 until total_hit == 21
 
-if first_hit = 0 
+if first_hit = 0
   first_hit = hit?(inital_total)
   second_hit = hit?(first_hit)
 end
