@@ -91,47 +91,26 @@ first_hit = 0
 second_hit = 0
 total_hit = 0
 hit_count = 0
-asked_again = false
+stay = false
 
-inital_total = initial_round
+total_hit = initial_round
 
-until total_hit == 21
+#total_hit = hit?(inital_total)
 
-if first_hit = 0
-  first_hit = hit?(inital_total)
-  second_hit = hit?(first_hit)
+until total_hit == 21 || stay = true
+
+stay_check = total_hit
+total_hit = hit?(total_hit)
+
+if stay_check == total_hit
+  stay_check_again = total_hit
+  total_hit = hit?(total_hit)
+if stay_check_again = total_hit
+  stay = true
 end
 
-continued_hit = hit?(second_hit)
-
-hit_one = hit?(hit_two)
-hit_count += 1
-
-
-hit_two = hit(hit_one)
-hit_count += 1
-
-total_hit = hit_two
-
-if hit_one == hit_two
-  sticked = true
-
-
-
-
-  if first_hit == inital_total && asked_again = false
-    second_hit = hit?(inital_total)
-    asked_again = true
-
-  end
-
-if first_hit == 0
-first_hit = hit?(inital_total)
 end
 
-
-
-total_hit = first_hit += second_hit
 
 puts "Your cards add up to #{total_hit}"
 end
