@@ -108,7 +108,6 @@ if stay_check == total_hit
 if stay_check_again = total_hit
   stay = true
 end
-
 end
 
 
