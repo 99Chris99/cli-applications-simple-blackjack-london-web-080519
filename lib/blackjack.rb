@@ -87,15 +87,11 @@ def runner
 
 welcome
 
-first_hit = 0
-second_hit = 0
 total_hit = 0
-hit_count = 0
 stay = false
 
 total_hit = initial_round
 
-#total_hit = hit?(inital_total)
 
 until total_hit >= 21 || stay == true
 
